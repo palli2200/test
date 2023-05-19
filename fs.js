@@ -23,17 +23,17 @@ let fs = require("fs")
 //     console.log(data)
 // })
 
-// fs.readFile('cities.json','UTF-8',(err,data) => {
+// fs.readFile('city.json','UTF-8',(err,data) => {
 //     if(err) throw err;
 //     console.log(data)
 // })
 
-// fs.readFileSync('cities.json','UTF-8',(err,data) => {
+// fs.readFileSync('city.json','UTF-8',(err,data) => {
 //     if(err) throw err;
 //     console.log(data)
 // })
 
-// let data = fs.readFileSync('cities.json',{encoding:'utf-8', flag:'r'})
+// let data = fs.readFileSync('city.json',{encoding:'utf-8', flag:'r'})
 
 // console.log("sync"+data)
 
@@ -47,15 +47,15 @@ let fs = require("fs")
 //     console.log("file deleted")
 // })
 
-// fs.unlink("mycode1.txt", (err)=>{
-//     if(err) throw err
-//     console.log("file deleted")
-// })
-
-fs.rename('mytest.txt','myFile.xml',(err)=>{
+fs.unlink("mycode1.txt", (err)=>{
     if(err) throw err
-    console.log('file renamed')
+    console.log("file deleted")
 })
+
+// fs.rename('mytest.txt','myFile.xml',(err)=>{
+//     if(err) throw err
+//     console.log('file renamed')
+// })
 
 
 
